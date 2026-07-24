@@ -1,0 +1,32 @@
+.menu-hero {
+  background: linear-gradient(135deg, #fff5ef, #ffe7da);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.menu-hero-content {
+  max-width: 750px;
+  margin: auto;
+}
+
+.menu-badge {
+  display: inline-block;
+  padding: 10px 22px;
+  background: rgba(255, 87, 34, 0.12);
+  color: #ff5722;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.menu-hero h1 {
+  font-size: 54px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.menu-hero p {
+  font-size: 19px;
+  color: #666;
+  line-height: 1.8;
+}

@@ -1,0 +1,48 @@
+.size-section{
+margin-top:30px;
+}
+
+.size-section h3{
+margin-bottom:15px;
+font-size:1.2rem;
+color:#222;
+}
+
+.size-options{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.size-btn{
+flex:1;
+min-width:140px;
+padding:18px;
+border:2px solid #ececec;
+background:white;
+border-radius:16px;
+cursor:pointer;
+transition:.25s;
+display:flex;
+flex-direction:column;
+gap:6px;
+align-items:center;
+font-weight:600;
+}
+
+.size-btn:hover{
+border-color:#ff6b00;
+transform:translateY(-3px);
+}
+
+.active-size{
+background:#ff6b00;
+color:white;
+border-color:#ff6b00;
+box-shadow:0 10px 20px rgba(255,107,0,.25);
+}
+
+.size-btn small{
+font-size:.8rem;
+opacity:.85;
+}

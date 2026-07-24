@@ -1,37 +1,37 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Offers from "./pages/Offers";
+
+import FloatingCart from "./components/cart/FloatingCart";
+import Wishlist from "./pages/Wishlist";
 
 function App() {
-  const [pizzas, setPizzas] = useState([]);
-
-  async function fetchPizzas() {
-    try {
-      const response = await axios.get("http://localhost:5000/api/pizzas");
-      setPizzas(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  useEffect(() => {
-    fetchPizzas();
-  }, []);
-
   return (
-    <div>
-      <h1>🍕 PizzaVerse</h1>
+    <BrowserRouter>
+      <Navbar />
 
-      {pizzas.map((pizza) => (
-        <div key={pizza._id}>
-          <h2>{pizza.name}</h2>
-          <img src={pizza.image} alt={pizza.name} width="250" />
-          <p>₹ {pizza.price}</p>
-          <p>{pizza.category}</p>
-          <p>{pizza.description}</p>
-          <hr />
-        </div>
-      ))}
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+      </Routes>
+
+      <FloatingCart />
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 

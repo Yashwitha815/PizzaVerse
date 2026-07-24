@@ -1,0 +1,18 @@
+.empty-cart {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.empty-cart h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empty-cart p {
+  color: #777;
+  font-size: 1.1rem;
+}

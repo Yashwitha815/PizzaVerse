@@ -1,0 +1,227 @@
+/* =========================================
+   WISHLIST CARD
+========================================= */
+
+.wishlist-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.wishlist-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.wishlist-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.wishlist-content{
+
+    padding:22px;
+
+}
+
+.wishlist-content h2{
+
+    color:#222;
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.wishlist-content p{
+
+    color:#666;
+
+    line-height:1.6;
+
+    margin:15px 0;
+
+    min-height:55px;
+
+}
+
+.wishlist-content h3{
+
+    color:#FF6B35;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.wishlist-rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#F4B400;
+
+    font-weight:600;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.wishlist-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+/* ---------- Add Button ---------- */
+
+.wishlist-cart-btn{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    background:#FF6B35;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.wishlist-cart-btn:hover{
+
+    background:#E85A29;
+
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Remove Button ---------- */
+
+.wishlist-remove-btn{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    background:#EF4444;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.wishlist-remove-btn:hover{
+
+    background:#DC2626;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+.wishlist-buttons{
+
+    flex-direction:column;
+
+}
+
+.wishlist-content h2{
+
+    font-size:21px;
+
+}
+
+.wishlist-content h3{
+
+    font-size:26px;
+
+}
+
+}

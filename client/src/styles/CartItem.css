@@ -1,0 +1,203 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= IMAGE ================= */
+
+.cart-item img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+/* ================= DETAILS ================= */
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.item-details p {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+/* ================= CUSTOMIZATION ================= */
+
+.pizza-customization {
+  margin: 15px 0;
+}
+
+.pizza-customization p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.pizza-customization strong {
+  color: #333;
+}
+
+/* ================= QUANTITY ================= */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.quantity button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 10px;
+
+  background: #ff6b35;
+  color: white;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.quantity button:hover {
+  background: #e85a29;
+  transform: scale(1.08);
+}
+
+.quantity button:active {
+  transform: scale(0.95);
+}
+
+.quantity span {
+  min-width: 35px;
+
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #222;
+}
+
+/* ================= PRICE ================= */
+
+.item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.item-price h3 {
+  color: #ff6b35;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ================= COMMON BUTTON ================= */
+
+.item-price button {
+  width: 110px;
+  padding: 12px 0;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+/* ================= EDIT BUTTON ================= */
+
+.edit-btn {
+  background: #ff6b35;
+}
+
+.edit-btn:hover {
+  background: #e85a29;
+  transform: translateY(-2px);
+}
+
+/* ================= REMOVE BUTTON ================= */
+
+.remove-btn {
+  background: #ef4444;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.item-price button:active {
+  transform: scale(0.95);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-item img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .item-details {
+    margin: 15px 0;
+  }
+
+  .item-price {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .quantity {
+    justify-content: center;
+  }
+}

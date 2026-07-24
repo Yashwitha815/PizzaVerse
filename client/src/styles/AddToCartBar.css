@@ -1,0 +1,44 @@
+.bottom-action {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding-top: 18px;
+  margin-top: 25px;
+  border-top: 1px solid #ececec;
+}
+
+.bottom-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bottom-total span {
+  color: #666;
+  font-size: 1rem;
+}
+
+.bottom-total h2 {
+  color: #ff6b00;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.add-cart-btn {
+  width: 100%;
+  border: none;
+  background: #ff6b00;
+  color: white;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.add-cart-btn:hover {
+  background: #e65f00;
+  transform: translateY(-2px);
+}
